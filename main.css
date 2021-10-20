@@ -1,0 +1,584 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+ width: 100%;
+height: 100%;
+margin: 0px;
+padding: 0px;
+overflow-x: hidden; 
+}
+
+.container
+{width: 100%;
+ height:auto;
+ background-color:#FFFFFF;
+}
+
+.header
+{width: 100%;
+ height:100px;
+
+}
+
+.logo
+{width: 20%;
+ height:100px;
+ 
+ float:left;
+ margin-top:-10px;
+ padding-left: 150px;
+ box-sizing: border-box;
+}
+
+.menu
+{width: 60%;
+ height:100px;
+ 
+ float:left;
+ margin-left: -40px;
+
+}
+
+@font-face {
+  font-family: chuindam;
+  src: url("../font/Nunito-Bold.ttf");
+}
+.menu ul
+{
+list-style: none;
+}
+
+.menu ul li
+{
+    list-style: none;
+    float:left;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    font-family:chuindam;
+}
+
+.menu ul li:hover
+{
+    background-color:#66BD45;
+}
+
+.icon 
+{
+    width: 20%;
+    height: 100px;
+     
+    float:right; 
+    padding:20px;
+    box-sizing: border-box;  
+    
+
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color:white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:#000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color:#000000;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.anhnen
+{
+    width: 100%;
+    height: 600px;
+    padding-top:50px; 
+    background-image: url("../images/organic-food-farm.jpg"); 
+    background-size: cover;
+}
+
+@font-face {
+  font-family: chuhoa;
+  src: url("../font/Economica-Regular.ttf");
+}
+
+
+button{
+background:#68BD46;
+font-size: 17px;
+color:aliceblue;
+font-family: chuindam;
+border: thin;
+padding:10px 40px;
+box-sizing: border-box;
+}
+.text {
+color: #fff;
+
+left: 155px;
+font-size: 80px;
+font-family: chuhoa;
+line-height: 0.1;
+opacity: 0;
+position: relative;
+animation: animtext 1s 2s linear forwards
+
+}
+
+@keyframes animtext
+{
+    0%
+    {
+        opacity: 0;
+        top:0px;
+    }
+    100%
+    {
+        opacity: 1;
+        top:0px;}
+}
+
+.slider
+{
+        width: 100%;
+        height: 300px;
+     
+        display: flex;
+        justify-content: center;
+        }
+
+ .hcn
+    {
+        width: 22%;
+        height: 250px;
+         
+        margin:20px;
+        float:left;      
+    }
+
+.hcn button
+    {
+        width: 100%;
+        height: 90px;
+        background-color:#FFFFFF;  
+        margin-top: 90px;
+        font-family: chuindam;
+        font-size: 22px;
+        color:#1D4A24;
+        border-style:double;
+        border-width: 5px;
+        border-spacing: 5px;
+        border-color:darkgrey;
+        align-content: center;
+        text-align: center;}
+
+    
+.hcn button:hover
+{
+    background-color:#67BC45;
+    color:white;
+    transition: 0,4s;
+}
+
+.product{
+    width: 102%;
+    height: 800px;
+   
+    display: flex;
+    justify-content: center;
+    padding: 10px -150px;
+    box-sizing: border-box;
+    
+   
+}
+
+.anhleft{
+    width: 350px;
+    height: 700px;
+    background-image:url("../images/markus-spiske-Nnoy-G7QVkY-unsplash.jpg");
+    background-size: cover;
+      float:left;
+    font-family: chuhoa;
+    font-size:60px;
+    color:white;
+    text-align:left;
+    padding-top:368px;
+    padding-left:30px;
+    box-sizing: border-box;
+    
+    
+}
+
+.anhright{
+    width: 40%;
+    height: 700px;
+    margin-top:-10px;
+    margin-left: 120px;
+    
+    float:right;
+position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  50%  {left:100px; top:0px;}
+}
+    
+
+.anh1
+{
+    width: 40%;
+    height: 350px;
+    
+    float:left;
+    padding:-10px 20px;
+}
+.anh2
+{
+    width: 40%;
+    height: 350px;
+    
+    float:right;
+    padding:0 -70px;
+    box-sizing: border-box;
+}
+.chuthich{
+    width: 150%;
+    height: 50px;
+  
+    font-family: chuindam;
+    text-align: center;
+  
+}
+.approch
+{
+    width: 100%;
+    height: 400px;
+    background-image:url("../images/5098049.jpg");
+    background-size:cover;
+}
+.text-approch
+{
+    width: 50%;
+    height: 300px;
+    
+    margin-left: 700px;
+    font-family: chuindam;
+    text-align: right;
+    padding: 40px;
+    box-sizing: border-box;
+    color:#242F35;
+    
+    }
+.approch button:hover
+{background-color:#E35C3E}
+.ourteam
+{
+    width: 100%;
+    height:500px;
+    
+    font-family: chuindam;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+.chungtoila{
+    width: 100%;
+    height:100px;
+    
+    font-family: chuindam;
+    font-size:30px;
+    text-align: center;
+        
+}
+.photto
+{
+    width: 26%;
+    height:500px;
+    
+
+    padding-left:40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.photto img{
+    transform: scale(1);
+    transition: all 0.2s;
+}
+.photto:hover img{
+    transform: scale(1.1);
+    
+}
+
+.lable{
+    width: 300px;
+    height: 70px;
+    background-color:#DCE9EF;
+    position: absolute;
+    top:320px;
+    font-family: chuindam;
+    font-size: 18px;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 70%;
+}
+.opinion
+{width: 100%;
+height: 600px;
+background-image:url("../images/business-agreement-shaking-hands-melon-plantation.jpg");
+position: relative;
+font-family: chuindam;
+font-size:30px;
+text-align: center;
+    padding-top:70px;
+    box-sizing: border-box;
+
+}
+
+.opinion-text
+{width: 80%;
+height: 300px;
+background-color:white;
+position: absolute;
+top: 200px;
+left:130px;
+font-family:chuindam;
+ font-size: 17px;
+    text-align: center;
+    transform:scale(1);
+    transition: all 0.2s;
+}
+.opinion-text:hover{
+    transform: scale(1.1);
+    box-shadow:
+                10px 10px #DCE9EF,
+                20px 20px #DCE9EF,
+                30px 30px #DCE9EF;
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+
+}
+
+.opinion-text img
+{border-radius:100%;
+ padding:50px 550px;
+}
+
+.gallery{
+    width: 100%;
+    height: 800px;
+    
+    text-align: center;
+    font-family:chuindam;
+    font-size:30px;
+    padding:50px;
+    box-sizing: border-box;
+}
+.anhtren{
+    width: 100%;
+    height: 350px;
+    
+    display:flex;
+    justify-content: center;
+  
+    transform:scale(0.9);
+    transition: all 0.2s;
+}
+.anhtren:hover{
+    transform: scale(1);
+}
+
+.anhtren1{
+    width: 30%;
+    height: 350px;
+    
+    float: left;
+    padding-top:20px;
+    box-sizing: border-box;
+    transform:scale(0.9);
+    transition: all 0.2s;
+}
+.anhtren1:hover{
+    transform: scale(1);
+    background-color:#E3DDDD;
+}
+
+
+.anhduoi{
+    width: 100%;
+    height: 350px;
+  
+    display:flex;
+    justify-content: center;
+
+    transform:scale(0.9);
+    transition: all 0.2s;
+}
+.anhduoi:hover{
+    transform: scale(1);
+}
+.anhduoi1{
+    width: 30%;
+    height: 350px;
+    
+    float: left;
+    padding-top:20px;
+    box-sizing: border-box;
+    transform:scale(0.9);
+    transition: all 0.2s;
+}
+.anhduoi1:hover{
+    transform: scale(1);
+    background-color:#E3DDDD;
+}
+
+.partner{
+    width: 100%;
+    height: 400px;
+    background-color:#E0DDDD;
+    padding-top:30px;
+    box-sizing: border-box;
+    margin-top:50px;
+    font-family:chuindam;
+    font-size:30px;
+    text-align: center;
+  
+}
+
+.partnerphoto {
+    width: 100%;
+    height: 300px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:5px;
+    position: absolute;
+ }
+
+    .partnerphoto1 {
+    width: 15%;
+    height: 150px;
+    
+    margin:5px;
+    float:left;
+    padding-top:20px;
+    box-sizing: border-box;
+    position: relative;
+    opacity:90%;
+    transition: all 0.2s;
+ }
+
+.partnerphoto1:hover{
+    border-style:groove;
+}
+.lienhe
+{
+    width: 100%;
+    height: 600px;
+    
+    margin-top:50px;
+    font-family:chuindam;
+    font-size:30px;
+    text-align:center;}
+.fruit{
+    width: 45%;
+    height: 600px;
+    float:left;
+    padding:50px;
+    box-sizing: border-box;}
+.form
+{
+    width: 45%;
+    height: 600px;
+    
+    float:right;
+    font-family: chuindam;
+    font-size: 15px;
+    text-align: left;
+    padding-top:100px;
+    box-sizing: border-box;}
+
+input{
+    width: 250px;
+    height: 40px;
+    border:none;
+    background-color:#D5D5D5;
+    font-family: chuindam;
+    
+}
+.footer{
+    width: 100%;
+    height: 500px;
+    background-color:#2B2828;
+}
+.footer-noidung{
+    width: 33%;
+    height: 500px;
+    
+    float:left;
+    font-family: chuindam;
+    font-size:15px;
+    padding: 50px;
+    box-sizing: border-box;
+    color:#A59C9D;
+}
+.nho{
+    width: 100%;
+    height: 140px;
+
+    float: left;
+   display: flex;
+   justify-content:center;}
+
+.nhoup1{
+    width: 40%;
+    height: 100px;
+    
+    float:left;
+    margin-left:-80px;
+}
+.nhoup2{
+    width: 40%;
+    height: 100px;
+  
+    float:right;
+    margin-left:-15px;
+    
+    
+}
